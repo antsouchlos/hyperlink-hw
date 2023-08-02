@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "encyclopedia_galactica")(type "KiCad")(uri "${KIPRJMOD}/encyclopedia_galactica/encyclopedia_galactica.pretty")(options "")(descr ""))
+)

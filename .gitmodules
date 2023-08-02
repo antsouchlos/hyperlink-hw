@@ -1,0 +1,3 @@
+[submodule "encyclopedia_galactica"]
+	path = encyclopedia_galactica
+	url = https://github.com/antsouchlos/EncyclopediaGalactica.git
