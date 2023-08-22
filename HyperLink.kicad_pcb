@@ -130,6 +130,7 @@
   (net 39 "/STATUS_LED_RES")
   (net 40 "/POWER_LED_RES")
   (net 41 "/STATUS_LED")
+  (net 42 "unconnected-(AE1-PCB_Trace-Pad2)")
 
   (footprint "Package_TO_SOT_SMD:SOT-23-5" (layer "F.Cu")
     (tstamp 04022612-8ccd-4763-9479-4d249518bbda)
@@ -519,7 +520,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 096d44e3-1494-4ecd-9c62-595aa0060429)
     )
-    (fp_text value "12pF" (at 0 1.16 90) (layer "F.Fab") hide
+    (fp_text value "10pF" (at 0 1.16 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 33fdd667-4edd-4c60-905c-09be9335ac99)
     )
@@ -712,7 +713,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 87026f56-343b-444d-9705-c0cf2b2b3391)
     )
-    (fp_text value "C" (at 0 1.16 90) (layer "F.Fab") hide
+    (fp_text value "4p" (at 0 1.16 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2613fc2c-2dda-41f8-a7a5-7b44cbab56e3)
     )
@@ -820,7 +821,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9cf59693-e4da-4870-baa8-76df5e7b21d3)
     )
-    (fp_text value "C" (at 0 1.16 90) (layer "F.Fab") hide
+    (fp_text value "4.7p" (at 0 1.16 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 31879c22-61a9-4fb5-87d7-acc58355efd4)
     )
@@ -874,7 +875,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bad31a4c-8b36-418f-b404-ab70f00b61dd)
     )
-    (fp_text value "L" (at 0 1.17) (layer "F.Fab") hide
+    (fp_text value "1.8nH" (at 0 1.17) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a30ff8f1-0913-49d9-b676-81a7a3118aee)
     )
@@ -978,7 +979,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 604634fc-e86f-42a4-bc49-e2ccf453e35a)
     )
-    (fp_text value "12pF" (at 0 1.16 90) (layer "F.Fab") hide
+    (fp_text value "10pF" (at 0 1.16 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e25acdfc-872f-49d4-b91d-eb22660ecee0)
     )
@@ -2762,9 +2763,9 @@
     (at 118.715 81.98)
     (property "Sheetfile" "HyperLink.kicad_sch")
     (property "Sheetname" "")
-    (property "ki_description" "Antenna")
+    (property "ki_description" "Ceramic chip antenna with pin for PCB trace")
     (property "ki_keywords" "antenna")
-    (path "/8209522e-3e2a-476d-b815-a3ed41bc68fe")
+    (path "/967d5c62-6a2a-49af-b16c-327ce806511a")
     (attr smd)
     (fp_text reference "AE1" (at 0 -11 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.1)))
@@ -2787,9 +2788,9 @@
     (fp_line (start 6.5 5) (end -6.5 5)
       (stroke (width 0.1) (type default)) (layer "F.CrtYd") (tstamp 020c3839-f83c-48bb-a8e4-c91326ef7857))
     (pad "1" smd rect locked (at 4.1 0) (size 0.8 1.8) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 17 "/RF") (pinfunction "A") (pintype "input") (thermal_bridge_angle 45) (tstamp 14702f3c-c791-4595-b9c8-3d2c1829aaea))
+      (net 17 "/RF") (pinfunction "FEED") (pintype "input") (thermal_bridge_angle 45) (tstamp 14702f3c-c791-4595-b9c8-3d2c1829aaea))
     (pad "2" smd rect locked (at 0.9 0) (size 0.8 1.8) (layers "F.Cu" "F.Paste" "F.Mask")
-      (thermal_bridge_angle 45) (tstamp 6abcd6b2-3477-4afc-8582-4f315ec3649f))
+      (net 42 "unconnected-(AE1-PCB_Trace-Pad2)") (pinfunction "PCB_Trace") (pintype "passive+no_connect") (thermal_bridge_angle 45) (tstamp 6abcd6b2-3477-4afc-8582-4f315ec3649f))
     (zone (net 0) (net_name "") (layers "*.Cu") (tstamp b61cb709-2b67-435e-8822-028586d3d270) (hatch edge 0.5)
       (connect_pads (clearance 0))
       (min_thickness 0.25) (filled_areas_thickness no)
