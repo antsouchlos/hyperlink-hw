@@ -1,6 +1,6 @@
 # HyperLink
 
-A PCB for gathering data sent out by CommonSense boards over bluetooth and
+A PCB for gathering data form CommonSense boards over bluetooth and
 retransmitting over wifi.
 
 After cloning, the libraries can be downloaded using
