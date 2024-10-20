@@ -1,0 +1,50 @@
+kibot:
+  version: 1
+
+outputs:
+  - name: 'schematic pdf'
+    comment: 'Schematic pdf generation'
+    type: 'pdf_sch_print'
+    dir: 'doc/generated'
+  - name: 'schematic svg'
+    comment: 'Schematic pdf generation'
+    type: 'svg_sch_print'
+    dir: 'doc/generated'
+    options:
+      background_color: true
+  - name: 'pcbdraw top svg'
+    comment: 'PCB top image generation'
+    type: 'pcbdraw'
+    dir: 'doc/generated'
+    options:
+      bottom: false
+      style: 'set-blue-cu'
+      show_components: 'none'
+  - name: 'pcbdraw top pdn'
+    comment: 'PCB top image generation'
+    type: 'pcbdraw'
+    dir: 'doc/generated'
+    options:
+      format: 'png'
+      dpi: 600
+      bottom: false
+      style: 'set-blue-cu'
+      show_components: 'none'
+  - name: 'pcbdraw bottom svg'
+    comment: 'PCB bottom image generation'
+    type: 'pcbdraw'
+    options:
+      bottom: true
+      style: 'set-blue-cu'
+      show_components: 'none'
+    dir: 'doc/generated'
+  - name: 'pcbdraw bottom png'
+    comment: 'PCB bottom image generation'
+    type: 'pcbdraw'
+    options:
+      format: 'png'
+      dpi: 600
+      bottom: true
+      style: 'set-blue-cu'
+      show_components: 'none'
+    dir: 'doc/generated'

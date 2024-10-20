@@ -1,0 +1,22 @@
+name: docs-generation
+
+on:
+  pull_request:
+    # paths:
+    #   - '**.sch'
+    #   - '**.kicad_pcb'
+
+jobs:
+  docs-generation:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: INTI-CMNB/KiBot@v1.8.1
+      with:
+        config: config.kibot.yaml
+        schema: 'HyperLink.kicad_sch'
+        board: 'HyperLink.kicad_pcb'
+    - name: upload results
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: 'Update Docs'
